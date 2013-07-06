@@ -1,0 +1,26 @@
+﻿Build started 7/5/2013 9:26:05 AM.
+     1>Project "F:\homework\Chapter2\Pseudo-random_point_cloud\Pseudo-random_point_cloud.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Pseudo-random_point_cloud.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Pseudo-random_point_cloud.exe.embed.manifest.res" Debug\Pseudo-random_point_cloud_manifest.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\homework\Chapter2\Debug\Pseudo-random_point_cloud.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Pseudo-random_point_cloud.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\homework\Chapter2\Debug\Pseudo-random_point_cloud.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\homework\Chapter2\Debug\Pseudo-random_point_cloud.lib" /MACHINE:X86 "Debug\Pseudo-random_point_cloud.exe.embed.manifest.res"
+         Debug\main.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Pseudo-random_point_cloud.exe.embed.manifest" /manifest "Debug\Pseudo-random_point_cloud.exe.intermediate.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         Pseudo-random_point_cloud.vcxproj -> F:\homework\Chapter2\Debug\Pseudo-random_point_cloud.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Pseudo-random_point_cloud.unsuccessfulbuild".
+         Touching "Debug\Pseudo-random_point_cloud.lastbuildstate".
+     1>Done Building Project "F:\homework\Chapter2\Pseudo-random_point_cloud\Pseudo-random_point_cloud.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.82

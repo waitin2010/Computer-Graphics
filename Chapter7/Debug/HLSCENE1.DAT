@@ -1,0 +1,53 @@
+!hlScene1.dat - fsh 2/18/99
+
+background .1 .1 .1
+light 10 10 10 1 1 1  !bright white light 
+
+maxRecursionDepth 6
+minTransparency 0.8
+minReflectivity 0.7
+
+!reflectivity 0.9
+
+def green {diffuse 0 .8 0 ambient 0 .5 0}
+def gray {diffuse .5 .5 .5 ambient .2 .2 .2}
+def yellow {diffuse .9 .9 0 ambient .2 .2 0}
+def cyan {diffuse 0 .8 .8 ambient 0 .4 .4}
+def red {diffuse .8 0 .7 ambient .2 0 0}
+
+specular .8 .8 .8
+specularExponent 30
+
+def bar{
+  use green
+  push scale 1 .2 .2 sphere pop
+  use red
+  push translate 1 0 0 scale .2 .2 .2 sphere pop
+  push translate -1 0 0 scale .2 .2 .2 sphere pop
+}
+def jack{
+ use bar
+ !emissive 0 .2 .4
+ push rotate 90 0 1 0 use bar pop
+ push rotate 90 0 0 1 use bar pop
+}
+
+use red
+push rotate 10 0 1 0 taperedCylinder  0.3 pop
+
+!push translate 2 0 0 scale 1 3 2 use cyan cube pop
+
+push translate 0 3 0 rotate 90 1 0 0 use green cone pop
+
+push translate -2 0 0 use jack pop
+push translate 0 -3 0 scale 2 2 2 use jack pop
+push use cyan translate -4 0 -4 rotate 90 1 0 0 scale .1 .1 .1 mesh pawn.3vn pop
+push use yellow translate -4 -4 4 mesh bucky.3vn pop
+push translate -2 3 0 use cyan mesh diamond.3vn pop
+
+push translate 3 -2 0 use gray mesh icosa.3vn pop
+push translate 0 -2 2 use red mesh barnsimp.3vn pop
+
+!push translate -5 -2 2 use yellow mesh glass.3vn pop
+
+
